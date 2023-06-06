@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pharma — Academia</title>
+
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../style/academia.css">
+</head>
+
+<body>
+    <nav>
+        <div class="parte logo-container">
+            <a href="../index.html">
+                <h1>pharma</h1>
+            </a>
+        </div>
+        
+        <div class="parte searchbar-container">
+            <div class="searchbar" id="searchbar_id">
+                <input placeholder="Pesquisar" type="text">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+
+        <div class="parte list-container">
+            <ul class="desktop-list">
+                <li>
+                    <a href="#">contato</a>
+                </li>
+                <li>
+                    <a href="#">sobre</a>
+                </li>
+                <li>
+                    <a href="#">entrar</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-list">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bars bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="wrapper">
+        <div class="bloco resultados-container">
+            <div class="filtros">
+                <h4><i class="fa-duotone fa-filters"></i> Filtros</h4>
+
+                <form action="#" method="GET">
+                    <div class="field-section">
+                        <h5><i class="fa-duotone fa-arrow-down-arrow-up"></i> Ordenar</h5>
+
+                        <div class="field">
+                            <input type="radio" name="ordenacao" id="preco_maior_id">
+                            <label for="preco_maior_id">Maior preço</label>
+                        </div>
+                        
+                        <div class="field">
+                            <input type="radio" name="ordenacao" id="preco_menor_id">
+                            <label for="preco_menor_id">Menor preço</label>
+                        </div>
+                    </div>
+
+                    <div class="field-section">
+                        <h5><i class="fa-duotone fa-shapes"></i> Tipo</h5>
+
+                        <div class="field">
+                            <input type="checkbox" name="generico" id="generico_id">
+                            <label for="generico_id">Genérico</label>
+                        </div>
+                        
+                        <div class="field">
+                            <input type="checkbox" name="manipulado" id="manipulado_id">
+                            <label for="manipulado_id">Manipulado</label>
+                        </div>
+
+                        <div class="field">
+                            <input type="checkbox" name="similar" id="similar_id">
+                            <label for="similar_id">Similar</label>
+                        </div>
+                    </div>
+
+                    <div class="field-section">
+                        <h5><i class="fa-duotone fa-truck"></i> Entrega</h5>
+
+                        <div class="field">
+                            <input type="radio" name="entrega" id="delivery_id">
+                            <label for="delivery_id">Delivery</label>
+                        </div>
+                        
+                        <div class="field">
+                            <input type="radio" name="entrega" id="retirada_id">
+                            <label for="retirada_id">Retirada</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="qtd-resultados">
+                <p>4 resultados</p>
+            </div>
+
+            <ul>
+                <li>
+                    <a class="res-item" href="#">
+                        <div class="sponsor-container">
+                            <p>Empresa parceira</p>
+                            <i class="fa-brands fa-wodu sponsor"></i>
+                        </div>
+
+                        <i class="fa-duotone fa-prescription-bottle-medical preview"></i>
+
+                        <div class="desc-container">
+                            <p>Remédio 1</p>
+                            <h4>R$58,00</h4>
+                        </div>
+
+                        <div class="buttons-container">
+                            <button class="botao botaofilled-azul2"><i class="fa-duotone fa-cart-shopping"></i></button>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="res-item" href="#">
+                        <div class="sponsor-container">
+                            <p>Empresa parceira</p>
+                            <i class="fa-brands fa-node sponsor"></i>
+                        </div>
+
+                        <i class="fa-duotone fa-prescription-bottle-medical preview"></i>
+
+                        <div class="desc-container">
+                            <p>Remédio 2</p>
+                            <h4>R$58,00</h4>
+                        </div>
+
+                        <div class="buttons-container">
+                            <button class="botao botaofilled-azul2"><i class="fa-duotone fa-cart-shopping"></i></button>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="res-item" href="#">
+                        <div class="sponsor-container">
+                            <p>Empresa parceira</p>
+                            <i class="fa-brands fa-wodu sponsor"></i>
+                        </div>
+
+                        <i class="fa-duotone fa-prescription-bottle-medical preview"></i>
+
+                        <div class="desc-container">
+                            <p>Remédio 3</p>
+                            <h4>R$58,00</h4>
+                        </div>
+
+                        <div class="buttons-container">
+                            <button class="botao botaofilled-azul2"><i class="fa-duotone fa-cart-shopping"></i></button>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="res-item" href="#">
+                        <div class="sponsor-container">
+                            <p>Empresa parceira</p>
+                            <i class="fa-brands fa-stripe sponsor"></i>
+                        </div>
+
+                        <i class="fa-duotone fa-prescription-bottle-medical preview"></i>
+
+                        <div class="desc-container">
+                            <p>Remédio 4</p>
+                            <h4>R$58,00</h4>
+                        </div>
+
+                        <div class="buttons-container">
+                            <button class="botao botaofilled-azul2"><i class="fa-duotone fa-cart-shopping"></i></button>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="res-item" href="#">
+                        <div class="sponsor-container">
+                            <p>Empresa parceira</p>
+                            <i class="fa-brands fa-vnv sponsor"></i>
+                        </div>
+
+                        <i class="fa-duotone fa-prescription-bottle-medical preview"></i>
+
+                        <div class="desc-container">
+                            <p>Remédio 5</p>
+                            <h4>R$58,00</h4>
+                        </div>
+
+                        <div class="buttons-container">
+                            <button class="botao botaofilled-azul2"><i class="fa-duotone fa-cart-shopping"></i></button>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>Copyright 2023 &copy;</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+    --color-white: white;
+    --color-black: black;
+
+    
+    --color-lightgray1: #F3F3F3;
+    --color-lightgray2: #f5f5f5;
+    --color-lightgray3: #a5a5a5;
+    --color-lightgray4: #d6d6d6;
+    --color-lightgray5: #dfdfdf;
+
+
+    --color-darkgray1: #5f5f5f;
+    --color-darkgray2: #484848;
+    --color-darkgray3: #2d2d2d;
+    --color-darkgray4: #141414;
+
+
+    --color-blue0: #dce3ee;
+    --color-blue1: #8AB1EB;
+    --color-blue2: #006ED4;
+    --color-blue3: #3188eb;
+    --color-blue4: #1D71D3;
+    --color-blue6: #0B2447;
+
+
+    --color-purple3: #838FBE;
+    --color-purple4: #5565a3;
+    --color-purple5: #5a2fdc;
+    --color-purple6: #3C14AF;
+    --color-purple7: #2E3E8F;
+    --color-purple8: #0E1C67;
+    --color-purple9: #4f61be;
+    --color-purple10: #9D5ABD;
+    --color-purple11: #603077;
+    --color-purple12: #411555;
+
+
+    --color-pink2: #EB8AB8;
+    --color-pink3: #FF00D6;
+
+
+    --color-orange1: #ff9575;
+    --color-orange2: #e4702e;
+    --color-orange3: #D44D00;
+    --color-orange4: #ea5600;
+    --color-orange6: #861900;
+
+
+    --color-wine3: #f53e57;
+    --color-wine4: #D4004D;
+
+
+    --color-brown1: #bb7457;
+    --color-brown3: #993108;
+
+
+
+    /* NAVBAR */
+    --color-nav: var(--color-blue6);
+}
+
+
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+
+
+a.botao, button.botao, input.botao {
+    display: flex; justify-content: center; align-items: center; gap: 6px;
+    width: max-content;
+    margin: auto;
+    padding: 10px 24px;
+    font-size: small;
+    
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    transition: .3s;
+}
+
+
+a.botao i.slide-right {
+    font-size: small;
+    transform: translateY(1px);
+    transition: .3s;
+}
+a.botao:hover i.slide-right {
+    transform: translate(5px, 1px);
+}
+
+
+a.botaofilled-azul2, button.botaofilled-azul2, input.botaofilled-azul2 {
+    background-color: var(--color-blue4); color: var(--color-white);
+
+    box-shadow: 0 5px 50px var(--color-blue4);
+
+    cursor: pointer;
+}
+a.botaofilled-azul2:hover, button.botaofilled-azul2:hover, input.botaofilled-azul2:hover {
+    background-color: var(--color-blue3);
+    box-shadow: 0 5px 50px var(--color-blue3);
+}
+
+
+a.botaofilled-roxo4 {
+    background-color: var(--color-purple6); color: var(--color-white);
+
+    box-shadow: 0 5px 50px var(--color-purple6);
+}
+
+a.botaofilled-roxo4:hover {
+    background-color: var(--color-purple5);
+
+    box-shadow: 0 5px 50px var(--color-purple5);
+}
+
+
+
+div.wrapper {
+    display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 100px;
+    padding: 30px;
+
+    /* background-color: var(--color-lightgray4); */
+}
+
+
+
+div.wrapper div.bloco {
+    display: flex; flex-direction: column; gap: 40px;
+    width: 100%;
+    padding: 30px;
+    background-color: var(--color-white);
+}
+
+
+div.wrapper div.bloco p {
+    word-spacing: 4px;
+    line-height: 28px;
+}
+
+
+div.wrapper div.bloco h3 {
+    text-align: center;
+    font-size: 54px;
+    font-weight: 900;
+}
+div.wrapper div.bloco h3 span {
+    font-size: 54px;
+    font-weight: 900;
+
+    color: var(--color-purple10);
+}
+
+
+
+@media only screen and (max-width: 840px) {
+    div.wrapper {
+        padding: 0;
+    }
+
+
+
+    div.wrapper div.bloco {
+        max-width: unset;
+    }
+}

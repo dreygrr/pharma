@@ -1,0 +1,286 @@
+nav {
+    background-color: var(--color-orange4);
+}
+
+
+nav div.searchbar {
+    background-color: var(--color-orange1);
+}
+
+
+nav div.parte.list-container li a:after {
+    background-color: var(--color-orange1);
+}
+
+
+
+div.wrapper div.resultados-container div.filtros {
+    display: flex; flex-direction: column; gap: 10px;
+    min-width: max-content; height: min-content;
+    padding: 10px;
+    border-radius: 13px;
+    background-color: var(--color-lightgray5);
+}
+
+div.wrapper div.resultados-container div.filtros h4 {
+    font-size: 28px;
+}
+
+
+div.wrapper div.resultados-container div.filtros form {
+    display: flex; justify-content: space-between; align-items: flex-start; flex-direction: column; gap: 35px;
+}
+
+
+div.wrapper div.resultados-container div.filtros form div.field-section {
+    display: flex; justify-content: center; flex-direction: column; gap: 5px;
+}
+
+div.wrapper div.resultados-container div.filtros form div.field-section h5 {
+    padding: 2px 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: var(--color-darkgray3); color: var(--color-lightgray5);
+}
+div.wrapper div.resultados-container div.filtros form div.field {
+    display: flex; align-items: center; gap: 5px;
+}
+
+div.wrapper div.resultados-container div.filtros form div.field input[type="checkbox"], div.wrapper div.resultados-container div.filtros form div.field input[type="radio"] {
+    display: flex; justify-content: center; align-items: center;
+    appearance: none;
+    -webkit-appearance: none;
+    min-width: 20px; max-width: 20px;
+    min-height: 20px; max-height: 20px;
+    
+    border-radius: 4px;
+    border: 2px solid var(--color-darkgray3);
+    cursor: pointer;
+
+    transition: .2s;
+} div.wrapper div.resultados-container div.filtros form div.field input[type="radio"] {border-radius: 100%;}
+div.wrapper div.resultados-container div.filtros form div.field input[type="checkbox"]:after {
+    display: none;
+    content: "\f00c";
+    font-size: 12px;
+    font-weight: 900;
+
+    font-family: 'Font Awesome 5 Free';
+}
+div.wrapper div.resultados-container div.filtros form div.field input[type="checkbox"]:hover {
+    border-color: var(--color-darkgray1);
+}
+div.wrapper div.resultados-container div.filtros form div.field input[type="checkbox"]:checked {
+    background-color: var(--color-darkgray3);
+}
+div.wrapper div.resultados-container div.filtros form div.field input[type="checkbox"]:checked:after {
+    display: block;
+    color: var(--color-lightgray5);
+}
+
+
+div.wrapper div.resultados-container div.filtros form div.field input[type="radio"]:after {
+    display: none;
+    content: "\f111";
+    min-width: 8px; max-width: 8px;
+    min-height: 8px; max-height: 8px;
+    font-size: 6px;
+    font-weight: 900;
+
+    border-radius: 10px;
+    background-color: var(--color-lightgray5);
+
+    font-family: 'Font Awesome 5 Free';
+}
+div.wrapper div.resultados-container div.filtros form div.field input[type="radio"]:hover {
+    border-color: var(--color-darkgray1);
+}
+div.wrapper div.resultados-container div.filtros form div.field input[type="radio"]:checked {
+    display: flex; justify-content: center; align-items: center;
+    background-color: var(--color-darkgray3);
+}
+div.wrapper div.resultados-container div.filtros form div.field input[type="radio"]:checked:after {
+    display: block;
+    color: var(--color-lightgray5);
+}
+
+
+div.wrapper div.resultados-container div.filtros form div.field label {
+    font-weight: 700;
+    font-size: medium;
+    color: var(--color-darkgray3);
+}
+
+
+
+div.qtd-resultados {
+    display: none; justify-content: flex-end;
+}
+
+div.qtd-resultados p {
+    padding: 0 10px;
+    font-size: small;
+    text-transform: uppercase;
+    border-radius: 13px;
+    border: 5px solid var(--color-lightgray5);
+    color: var(--color-darkgray3);
+}
+
+
+
+div.wrapper div.resultados-container {
+    display: flex; flex-direction: row; justify-content: center;
+}
+
+
+div.wrapper div.resultados-container ul {
+    display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; gap: 90px;
+    list-style-type: none;
+}
+
+
+
+div.wrapper div.resultados-container ul li a.res-item {
+    display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px;
+    /* margin: auto; */
+    padding: 10px;
+
+    border-radius: 13px;
+    text-decoration: none;
+    background-color: var(--color-lightgray5);
+    box-shadow: 6px 6px 0 var(--color-orange1);
+
+    overflow: hidden;
+    transition: .2s;
+}
+div.wrapper div.resultados-container ul li a.res-item:hover i.preview {
+    font-size: 106px;
+}
+
+
+div.wrapper div.resultados-container ul li a.res-item p {
+    color: var(--color-darkgray4);
+}
+
+
+div.wrapper div.resultados-container ul li a.res-item div.sponsor-container {
+    width: 100%;
+    max-height: 65px;
+    padding: 2px 8px;
+
+    border-radius: 8px;
+    background: linear-gradient(45deg, var(--color-purple10) 0, var(--color-purple12) 100%); color: var(--color-white);
+}
+div.wrapper div.resultados-container ul li a.res-item div.sponsor-container p {
+    font-size: small;
+    color: var(--color-white);
+}
+div.wrapper div.resultados-container ul li a.res-item div.sponsor-container i.sponsor {
+    font-size: 48px;
+    transform: translateY(-10px);
+}
+
+
+div.wrapper div.resultados-container ul li a.res-item i.preview {
+    display: flex; justify-content: center; align-items: center;
+    min-width: 220px; max-width: 220px;
+    min-height: 150px; max-height: 150px;
+    font-size: 100px;
+
+    border-radius: 8px;
+    background: linear-gradient(45deg, var(--color-orange3) 0, var(--color-orange2) 100%);
+    color: var(--color-orange6);
+
+    transition: .2s;
+}
+
+
+div.wrapper div.resultados-container ul li a.res-item div.desc-container {
+    width: 100%;
+}
+
+
+div.wrapper div.resultados-container ul li a.res-item div.desc-container h4 {
+    font-size: 32px;
+
+    color: var(--color-darkgray4);
+}
+
+
+div.wrapper div.resultados-container ul li a.res-item div.buttons-container {
+    width: 100%;
+}
+
+
+div.wrapper div.resultados-container ul li a.res-item div.buttons-container button.botao {
+    width: 100%;
+
+    border-radius: 8px;
+}
+
+
+div.wrapper div.resultados-container ul li a.res-item div.buttons-container button.botao i {
+    transition: .2s;
+}
+div.wrapper div.resultados-container ul li a.res-item div.buttons-container button.botao:hover i {
+    transform: translateX(6px) rotate(-5deg);
+}
+
+
+
+@media only screen and (max-width: 840px) {
+    div.wrapper div.resultados-container {
+        flex-direction: column;
+    }
+
+
+    div.wrapper div.resultados-container div.filtros form {
+        flex-direction: row;
+    }
+
+
+    div.wrapper div.resultados-container ul {
+        gap: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    div.wrapper div.resultados-container div.filtros form div.field-section h5 {
+        font-size: small;
+    }
+
+
+    div.wrapper div.resultados-container div.filtros form div.field-section label {
+        font-size: small;
+    }
+
+
+
+    div.qtd-resultados {
+        display: flex;
+    }
+
+
+
+    div.wrapper div.resultados-container li {
+        width: 100%;
+    }
+
+    div.wrapper div.resultados-container ul {
+        flex-direction: column;
+    }
+}
+
+
+
+/*FOR NAV*/
+@media only screen and (max-width: 720px) {
+    nav div.parte.list-container ul.mobile-list li a {
+        background-color: var(--color-orange3);
+    }
+    nav div.parte.list-container ul.mobile-list li a:hover {
+        background-color: var(--color-orange2);
+    }
+}

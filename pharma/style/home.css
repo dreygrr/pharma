@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+a.botao {
+    min-width: 180px;
+}
+
+
+
+div.banner {
+    display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 75px;
+    height: 75vh;
+
+    /* background: linear-gradient(45deg, var(--color-purple3) 0, var(--color-pink3) 100%); */
+    background: url("../img/banner-desktop.jpg");
+    background-size: cover;
+    color: var(--color-white);
+}
+
+
+div.banner div.welcome {
+    display: flex; align-items: center; gap: 75px;
+}
+
+
+div.banner div.welcome div.sep {
+    display: block;
+    min-width: 1px; max-width: 1px;
+    height: 100%;
+
+    background-color: var(--color-lightgray2);
+}
+
+
+div.banner h3 {
+    font-size: 86px;
+
+    line-height: 86px;
+}
+
+
+div.banner div.options {
+    display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px;
+}
+
+
+div.banner div.options p {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+
+
+div.banner a.move-down {
+    display: flex; justify-content: center; align-items: center; gap: 5px;
+    font-size: 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    animation: updown 2s infinite;
+}
+
+
+
+div.wrapper div.bloco.introducao div.tutorial {
+    display: flex; justify-content: center; align-items: center; flex-direction: row; gap: 30px;
+}
+
+
+div.wrapper div.bloco.introducao div.tutorial div.icons-container {
+    position: relative;
+}
+
+
+div.wrapper div.bloco.introducao div.tutorial div.icons-container i {
+    display: flex; justify-content: center; align-items: center;
+    min-width: 180px; max-width: 180px;
+    min-height: 180px; max-height: 180px;
+    font-size: 100px;
+    z-index: 2;
+
+    border-radius: 30px;
+
+    background: linear-gradient(45deg, var(--color-purple11) 0, var(--color-purple10) 100%);
+    color: var(--color-purple12);
+
+    box-shadow: 0px 10px 50px var(--color-purple10);
+}
+
+div.wrapper div.bloco.introducao div.tutorial div.icons-container i.abs {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.wrapper div.bloco.introducao div.tutorial div.icons-container i.abs1 {
+    z-index: 1;
+    background: linear-gradient(45deg, var(--color-pink2) 0, var(--color-pink3) 100%);
+    box-shadow: 0 10px 50px var(--color-pink3);
+    transform: translate(calc(-50% - 20px), calc(-50% + 20px));
+}
+
+div.wrapper div.bloco.introducao div.tutorial div.icons-container i.abs2 {
+    z-index: 0;
+    background: linear-gradient(45deg, var(--color-orange1) 0, var(--color-orange3) 100%);
+    box-shadow: 0 10px 70px var(--color-orange3);
+    transform: translate(calc(-50% - 40px), calc(-50% + 40px));
+}
+
+
+div.wrapper div.bloco.introducao div.tutorial div.container {
+    display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 7px;
+    max-width: 50%;
+}
+
+
+div.wrapper div.bloco.introducao div.tutorial div.container h4 {
+    width: 100%;
+    font-size: 36px;
+
+    color: var(--color-darkgray4);
+}
+
+
+
+div.wrapper div.bloco.perfis-container div.perfis {
+    display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+div.wrapper div.bloco.perfis-container a.perfil {
+    /* border: 3px solid black; */
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    /* box-shadow: 0 25px 50px var(--color-lightgray3); */
+    box-shadow: 10px 10px 0px var(--color-lightgray4);
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+div.wrapper div.bloco.perfis-container a.perfil:hover {
+    transform: scale(1.03);
+    box-shadow: 15px 15px 0px var(--color-lightgray4);
+}
+
+div.wrapper div.bloco.perfis-container a.perfil div.thumb {
+    position: relative;
+    display: flex; justify-content: center; align-items: center;
+    height: 250px;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+
+    border: 2px solid black;
+    overflow: hidden;
+}
+div.wrapper div.bloco.perfis-container a.perfil div.thumb i {
+    display: flex; justify-content: center; align-items: center;
+    min-width: 180px; max-width: 180px;
+    min-height: 180px; max-height: 180px;
+    font-size: 120px;
+    transform: rotate(10deg);
+}
+div.wrapper div.bloco.perfis-container a.perfil div.thumb i.shadow-icon {
+    position: absolute;
+    top: 0; left: 0;
+    transform: scale(1.5) translate(50px, 50px) rotate(10deg);
+    opacity: .3;
+}
+div.wrapper div.bloco.perfis-container a.perfil p {
+    padding: 5px 10px;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    background-color: var(--color-lightgray2);
+    color: var(--color-darkgray4);
+    border-left: 2px solid var(--color-lightgray4);
+    border-right: 2px solid var(--color-lightgray4);
+    border-bottom: 2px solid var(--color-lightgray4);
+}
+
+
+
+div.wrapper div.bloco.perfis-container a.perfil.academia {
+}
+
+div.wrapper div.bloco.perfis-container a.perfil.academia div.thumb {
+    border-color: var(--color-orange1);
+}
+div.wrapper div.bloco.perfis-container a.perfil.academia div.thumb {
+    background: linear-gradient(135deg, var(--color-white) 25%, var(--color-orange2) 100%);
+}
+
+div.wrapper div.bloco.perfis-container a.perfil.academia div.thumb i {
+    color: var(--color-orange3);
+}
+div.wrapper div.bloco.perfis-container a.perfil.academia p {
+    /* color: var(--color-orange3); */
+}
+
+
+
+div.wrapper div.bloco.perfis-container a.perfil.beleza div.thumb {
+    border-color: var(--color-pink2);
+}
+div.wrapper div.bloco.perfis-container a.perfil.beleza div.thumb {
+    background: linear-gradient(135deg, var(--color-white) 25%, var(--color-wine3) 100%);
+}
+
+div.wrapper div.bloco.perfis-container a.perfil.beleza div.thumb i {
+    color: var(--color-wine4);
+}
+div.wrapper div.bloco.perfis-container a.perfil.beleza p {
+    /* color: var(--color-wine4); */
+}
+
+
+
+div.wrapper div.bloco.perfis-container a.perfil.saude div.thumb {
+    border-color: var(--color-blue1);
+}
+div.wrapper div.bloco.perfis-container a.perfil.saude div.thumb {
+    background: linear-gradient(135deg, var(--color-white) 25%, var(--color-blue3) 100%);
+}
+
+div.wrapper div.bloco.perfis-container a.perfil.saude div.thumb i {
+    color: var(--color-blue2);
+}
+div.wrapper div.bloco.perfis-container a.perfil.saude p {
+    /* color: var(--color-blue2); */
+}
+
+
+
+
+
+
+@keyframes updown {
+    0% {transform: translateY(0px);}
+    50%{transform: translateY(-10px);}
+    90% {transform: translateY(0px);}
+}
+
+
+
+@media only screen and (max-width: 840px) {
+    div.banner {
+        background: url("../img/banner-mobile.jpg");
+    }
+
+
+    div.banner div.welcome {
+        flex-direction: column; gap: 40px;
+        padding: 0 50px;
+    }
+
+
+    div.banner div.welcome h3 {
+        font-size: 10vw;
+    }
+
+    div.banner div.welcome h3 br {
+        display: none;
+    }
+
+
+    div.banner div.welcome div.sep {
+        display: none;
+    }
+
+
+    div.banner div.welcome div.options {
+        flex-direction: row; gap: 100px;
+    }
+
+
+
+    div.wrapper {
+        padding: 0;
+    }
+
+
+
+    div.wrapper div.bloco {
+        max-width: unset;
+    }
+
+
+
+    div.wrapper div.bloco.introducao div.tutorial {
+        flex-direction: column;
+    }
+
+
+    div.wrapper div.bloco.introducao div.tutorial div.container {
+        max-width: 100%;
+    }
+
+
+
+    div.wrapper div.bloco.introducao div.tutorial div.icons-container {
+        display: flex; justify-content: center; align-items: center; gap: 30px;
+    }
+
+
+    div.wrapper div.bloco.introducao div.tutorial div.icons-container i:first-of-type {
+        order: 1;
+    }
+
+    div.wrapper div.bloco.introducao div.tutorial div.icons-container i.abs {
+        position: unset;
+        top: unset; left: unset;
+        transform: unset;
+        min-width: 140px; max-width: 140px;
+        min-height: 140px; max-height: 140px;
+        font-size: 70px;
+    }
+    
+    div.wrapper div.bloco.introducao div.tutorial div.icons-container i.abs1 {
+        order: 2;
+        transform: translate(unset);
+    }
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    div.banner div.welcome {
+        padding: 0;
+    }
+    
+    div.banner div.welcome h3 {
+        font-size: 86px;
+    }
+
+    div.banner div.welcome h3 br {
+        display: unset;
+    }
+
+
+    div.banner div.welcome div.options {
+        gap: 30px;
+    }
+
+
+    div.banner div.welcome div.options div p {
+        font-size: 20px;
+    }
+
+
+
+    div.wrapper div.bloco.introducao div.tutorial div.icons-container {
+        position: relative;
+        gap: 5px;
+    }
+
+    
+    div.wrapper div.bloco.introducao div.tutorial div.icons-container i.abs {
+        position: absolute;
+    }
+    div.wrapper div.bloco.introducao div.tutorial div.icons-container i.abs1 {
+        transform: translateX(90px);
+    }
+    div.wrapper div.bloco.introducao div.tutorial div.icons-container i.abs2 {
+        transform: translateX(-90px);
+    }
+}

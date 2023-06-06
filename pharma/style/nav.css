@@ -1,0 +1,203 @@
+nav {
+    display: flex; justify-content: space-evenly; align-items: center;
+    min-height: 90px;
+    padding: 10px 30px;
+
+    background-color: var(--color-purple8); color: var(--color-white);
+}
+
+
+nav a {
+    text-decoration: none;
+}
+
+
+nav div.parte {
+    width: 100%;
+}
+
+nav div.parte.searchbar-container {
+    display: flex; justify-content: center; align-items: center;
+}
+
+nav div.parte.list-container {
+    display: flex; justify-content: flex-end;
+}
+
+nav div.parte.list-container ul.mobile-list {
+    display: none;
+}
+
+nav div.parte.list-container ul {
+    display: flex; justify-content: center; align-items: center; gap: 30px;
+    list-style-type: none;
+}
+nav div.parte.list-container li a {
+    position: relative;
+    padding: 15px;
+    font-size: 1vw;
+    
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+nav div.parte.list-container li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0; bottom: 0;
+
+    background-color: var(--color-purple3);
+    transition: .2s;
+}
+nav div.parte.list-container li a:hover:after {
+    width: 100%;
+}
+
+
+nav div.parte.logo-container a {
+    display: block;
+    width: max-content;
+}
+nav h1 {
+    width: max-content;
+    font-size: 64px;
+    font-weight: 900;
+
+    letter-spacing: -3px;
+
+    color: var(--color-white);
+}
+
+
+nav div.searchbar {
+    display: flex; align-items: center;
+    width: 75%;
+
+    border-radius: 5px;
+    background-color: var(--color-purple4);
+
+    overflow: hidden;
+
+    transition: .3s;
+}
+
+
+nav div.searchbar input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 0;
+
+    border: none; outline: none;
+    background-color: transparent;
+}
+nav div.searchbar input::placeholder {
+    color: var(--color-blue6);
+
+    transition: .3s;
+}
+
+nav div.searchbar i {
+    display: flex; justify-content: center; align-items: center;
+    min-width: 40px; max-width: 40px;
+    min-height: 40px; max-height: 40px;
+
+    border-radius: 5px;
+
+    color: var(--color-blue6);
+
+    transition: .3s;
+}
+nav div.searchbar i:hover {
+    transform: rotate(-15deg);
+}
+
+
+
+nav div.searchbar:hover, nav div.searchbar:focus-within {
+    background-color: var(--color-lightgray2);
+}
+nav div.searchbar:hover i, nav div.searchbar:hover input::placeholder {
+    color: var(--color-lightgray3);
+}nav div.searchbar:focus-within i, nav div.searchbar:focus-within input::placeholder {
+    color: var(--color-lightgray3);
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+    /* nav div.parte.logo-container, nav div.parte.list-container {
+        flex-shrink: 2;
+    } */
+
+    nav div.parte.logo-container, nav div.parte.list-container {
+        width: max-content;
+    }
+    
+    nav h1 {
+        font-size: 44px;
+    }
+
+
+    nav div.parte.list-container li a {
+        padding: 10px 0px;
+        font-size: small;
+    }
+
+    
+    nav div.searchbar {
+        width: 100%;
+        margin: 0 30px;
+    }
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    nav div.parte.logo-container {
+        width: 100%;
+    }
+
+
+
+    nav div.parte.searchbar-container {
+        display: none;
+    }
+
+
+
+    nav div.parte.list-container ul.desktop-list {
+        display: none;
+    }
+    
+
+    nav div.parte.list-container ul.mobile-list {
+        display: flex;
+        gap: 15px;
+    }
+
+
+    nav div.parte.list-container ul.mobile-list li i {
+        font-size: 28px;
+    }
+
+
+    nav div.parte.list-container ul.mobile-list li a:after {
+        width: unset;
+    }
+
+
+    nav div.parte.list-container ul.mobile-list li a {
+        display: flex; justify-content: center; align-items: center;
+        min-width: 50px; max-width: 50px;
+        min-height: 50px; max-height: 50px;
+        border-radius: 5px;
+        
+        background-color: var(--color-purple7);
+
+        transition: .3s;
+    }
+    nav div.parte.list-container ul.mobile-list li a:hover {
+        background-color: var(--color-purple9);
+    }
+}
